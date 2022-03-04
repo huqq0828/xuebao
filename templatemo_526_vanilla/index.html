@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Vanilla Bootstrap v4.2.1 Theme</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/templatemo-main.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+<!--
+Vanilla Template
+https://templatemo.com/tm-526-vanilla
+-->
+<body>
+
+    <div class="fixed-side-navbar">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span>首页</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#services"><span>课程培训</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio"><span>冰雪商城</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#our-story"><span>新闻咨询</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-us"><span>关于我们</span></a></li>
+        </ul>
+    </div>
+
+    <div class="parallax-content baner-content" id="home">
+        <video autoplay muted loop id="bg-video">
+        <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
+    </video>
+        <div class="container">
+            <div class="first-content">
+                <h1>雪宝</h1>
+                <span><em>“冷冰雪”</em>成<em>“热运动”</em>先行者</span>
+                <div class="primary-button">
+                    <a href="#services">更多服务>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="service-content" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="left-text">
+                        <h4>优质教学</h4>
+                        <div class="line-dec"></div>
+                        <p>雪宝创新性的以青少年冰雪运动培训为主要内容，致力于为用户提供全面且多元的培训课程，并以<a href="#"> AI 技术赋能培训</a>。为消费者提供更多元的选择，满足不同年龄段、不同熟练程度、不同目的用户的个性化需求。</p>
+                        <ul>
+                            <li>-  AI 技术促进精准化</li>
+                            <li>-  资源广泛，合作力强</li>
+                            <li>-  技术支撑，服务全面</li>
+                            <li>-  资源整合提供优质体验</li>
+                        </ul>
+                        <div class="primary-button2">
+                            <a href="#portfolio">更多资讯</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8" style="padding-left:90px">
+                    <div class="row">
+                       <div class="imgBox">
+    <img class="img-slide img1" src="img/i1.jpg" alt="1">
+    <img class="img-slide img2" src="img/i2.jpg" alt="2">
+    <img class="img-slide img3" src="img/q1.jpg" alt="3">
+</div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    var index=0;
+    //改变图片
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+    setInterval(ChangeImg,2000);
+</script>
+    
+    <div class="parallax-content projects-content" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="owl-testimonials" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="img/1b.jpg" data-lightbox="image-1"><img style="with:370px;height:250px" src="img/1.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>单板滑雪服套装</h4>
+                                    <span>¥1958.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="img/b2.jpg" data-lightbox="image-1"><img style="with:370px;height:250px" src="img/2.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>滑雪裤男女款</h4>
+                                    <span>¥710</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="img/b4.jpg" data-lightbox="image-1"><img style="with:370px;height:250px" src="img/4.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>快穿单板固定器</h4>
+                                    <span>¥1112</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="img/b3.jpg" data-lightbox="image-1"><img style="with:370px;height:250px" src="img/3.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>滑雪单板全地域滑雪装备</h4>
+                                    <span>¥1999</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="img/b5.jpg" data-lightbox="image-1"><img style="with:370px;height:250px" src="img/5.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>滑雪镜磁吸双层防雾</h4>
+                                    <span>¥108</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="img/b6.jpg" data-lightbox="image-1"><img style="with:370px;height:250px" src="img/6.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>新款ME滑雪卫衣</h4>
+                                    <span>¥599</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tabs-content" id="our-story">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="wrapper">
+                    <section id="first-tab-group" class="tabgroup">
+                      <div id="tab1">
+                        <img src="img/1st-tab.jpg" alt="">
+                        <p>点亮、缅怀、致敬、挥别……2月20日晚，在国家体育场“鸟巢”，2008年北京奥运会主题歌《我和你》的动人歌声再次响起，闪闪发光的奥运五环从场地中央升起。主火炬“大雪花”缓缓落下，在纯洁空灵的《雪花》歌声中，燃烧了16天的奥运之火渐渐熄灭。</p>
+                      </div>
+                      <div id="tab2">
+                        <img src="img/2nd-tab.jpg" alt="">
+                        <p>国家体育总局公布了《“十四五”体育发
+展规划》，《规划》中提到，要促进冰雪产业全面升级，加强战略规
+划布局，完善冰雪产业区域发展体系，以筹备北京2022 年冬奥会为
+契机，实现冰雪运动跨越式发展。</p>
+                      </div>
+                      <div id="tab3">
+                        <img src="img/4th-tab.jpg" alt="">
+                        <p>2021 年2 月10 日，冰雪产业再迎一利
+好政策，文化和旅游部、国家发展改革委、国家体育总局三部委联合
+印发《冰雪旅游发展行动计划（2021-2023 年）》，推动我国冰雪旅
+游高质量发展，同时助力北京冬奥会。</p>
+                      </div>
+                       <div id="tab4">
+                        <img src="img/4th-tab.jpg" alt="">
+                        <p>2021 年2 月10 日，冰雪产业再迎一利
+好政策，文化和旅游部、国家发展改革委、国家体育总局三部委联合
+印发《冰雪旅游发展行动计划（2021-2023 年）》，推动我国冰雪旅
+游高质量发展，同时助力北京冬奥会。</p>
+                      </div>
+                    </section>
+                    <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                      <li><a href="#tab1" class="active">2022 - 02</a></li>
+                      <li><a href="#tab2">2021 - 10</a></li>
+                      <li><a href="#tab4">2021 - 02</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax-content contact-content" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <div class="row">
+                            <form id="contact" action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="请输入您的联系方式..." required>
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="请输入您的主题..." required>
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="请输入您的留言..." required></textarea>
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">提交</button>
+                                      </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map">
+                        <div class="imgBox">
+    <img class="img-slide2 img1" src="img/11.jpg" alt="1">
+    <img class="img-slide2 img2" src="img/12.jpg" alt="2">
+    <img class="img-slide2 img3" src="img/13.jpg" alt="3">
+</div>
+                    </div>
+                    <script type="text/javascript">
+    var index=0;
+    //改变图片
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide2");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+    setInterval(ChangeImg,2000);
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#home">回到首页</a>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                    <p>Copyright &copy; 2022 雪宝Snowpy 
+            
+            		 <a rel="nofollow noopener" href="#home"><em>为冰雪运动爱好者提供一站式服务</em></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+
+</body>
+</html>
